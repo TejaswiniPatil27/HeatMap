@@ -16,6 +16,9 @@
 		26AE3F3B2885B884009BEBA2 /* HeatMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE3F3A2885B884009BEBA2 /* HeatMapTests.swift */; };
 		26AE3F452885B884009BEBA2 /* HeatMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE3F442885B884009BEBA2 /* HeatMapUITests.swift */; };
 		26AE3F472885B884009BEBA2 /* HeatMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE3F462885B884009BEBA2 /* HeatMapUITestsLaunchTests.swift */; };
+		26AE3F552886CAD7009BEBA2 /* CommonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE3F542886CAD7009BEBA2 /* CommonData.swift */; };
+		26AE3F582887978F009BEBA2 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE3F572887978F009BEBA2 /* Symbol.swift */; };
+		26F81321288A7B5600ADEAE0 /* SymbolDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F81320288A7B5600ADEAE0 /* SymbolDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		26AE3F402885B884009BEBA2 /* HeatMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeatMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AE3F442885B884009BEBA2 /* HeatMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatMapUITests.swift; sourceTree = "<group>"; };
 		26AE3F462885B884009BEBA2 /* HeatMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26AE3F542886CAD7009BEBA2 /* CommonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonData.swift; sourceTree = "<group>"; };
+		26AE3F572887978F009BEBA2 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		26F81320288A7B5600ADEAE0 /* SymbolDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		26AE3F222885B883009BEBA2 /* HeatMap */ = {
 			isa = PBXGroup;
 			children = (
+				26AE3F562887977F009BEBA2 /* Model */,
+				26AE3F532886CAC1009BEBA2 /* Helpers */,
 				26AE3F232885B883009BEBA2 /* AppDelegate.swift */,
 				26AE3F252885B883009BEBA2 /* SceneDelegate.swift */,
 				26AE3F272885B883009BEBA2 /* ViewController.swift */,
@@ -125,6 +133,23 @@
 				26AE3F462885B884009BEBA2 /* HeatMapUITestsLaunchTests.swift */,
 			);
 			path = HeatMapUITests;
+			sourceTree = "<group>";
+		};
+		26AE3F532886CAC1009BEBA2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				26AE3F542886CAD7009BEBA2 /* CommonData.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		26AE3F562887977F009BEBA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26AE3F572887978F009BEBA2 /* Symbol.swift */,
+				26F81320288A7B5600ADEAE0 /* SymbolDetails.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				26AE3F282885B883009BEBA2 /* ViewController.swift in Sources */,
+				26AE3F582887978F009BEBA2 /* Symbol.swift in Sources */,
 				26AE3F242885B883009BEBA2 /* AppDelegate.swift in Sources */,
+				26AE3F552886CAD7009BEBA2 /* CommonData.swift in Sources */,
+				26F81321288A7B5600ADEAE0 /* SymbolDetails.swift in Sources */,
 				26AE3F262885B883009BEBA2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,7 +469,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HeatMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -469,7 +497,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HeatMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
