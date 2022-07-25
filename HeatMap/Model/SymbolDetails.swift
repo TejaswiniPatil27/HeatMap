@@ -9,11 +9,11 @@ import Foundation
 
 struct SymbolDetails{
     var name: String?
-    var pricePercentage: String?
+    var pricePercentage: Float?
     var category: String?
     var index: Int
     
-    init(name: String? = nil, pricePercentage: String? = nil, category: String? = nil, index: Int) {
+    init(name: String? = nil, pricePercentage: Float? = nil, category: String? = nil, index: Int) {
         self.name = name
         self.pricePercentage = pricePercentage
         self.category = category
